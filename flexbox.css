@@ -1,0 +1,13 @@
+img, source {
+  width: 10%
+}
+
+.flexBoxContainer {
+
+  height: 10px;
+  display: flex;
+  Background: lightpink
+  justify-content: flex-end;
+  align-items: flex-start;
+  list-style-type: none;
+}

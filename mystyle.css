@@ -1,0 +1,87 @@
+img {
+  width: 100%;
+}
+
+.responsive {
+  max-width: 25%;
+  height: auto;
+}
+
+h1 {
+  font-size: 2em;
+  color: lightpink;
+  background-color: teal;
+}
+
+h2 {
+  font-size: 2em;
+  color: teal;
+  background-color: pink;
+}
+h3 {
+  font-size: 1em;
+  color: lightpink;
+  background-color: teal;
+}
+
+
+/* Navigation design */
+  ul {
+    list-style-type: none;
+    margin:10px;
+    padding: 0;
+    overflow: hidden;
+    background-color: white;
+      border: 5px solid lightpink;
+  }
+  li {
+    float: left;
+  }
+
+  li a {
+    display: block;
+    color: teal;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+
+  footer {
+    display: block;
+    color: teal;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+
+  /* Change the link color to #111 (black) on hover */
+  li a:hover {
+    color: lightpink;
+    border-color: lightpink;
+    background-color: teal;
+    transition: 1s;
+  }
+  /* screen reader only rule*/
+  .hidden {
+    position: absolute;
+    top: auto;
+    left: -10000px;
+    width:1px;
+    height:1px;
+    overflow:hidden;
+  }
+  /* ende of screen reader only*/
+  .shadow {
+    box-shadow: inset 0 0 20px lightpink;
+    transition: box-shadow 1s;
+  }
+
+  .shadow2 {
+    box-shadow: inset 0 0 20px teal;
+    transition: box-shadow 2s;
+  }
+
+  .shadow3 {
+    box-shadow: inset 0 0 20px teal;
+    transition: box-shadow 3s;
+  }
