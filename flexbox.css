@@ -7,7 +7,17 @@ img, source {
   height: 10px;
   display: flex;
   Background: lightpink
-  justify-content: flex-end;
+  justify-content: center;
+  align-items: flex-center;
+  list-style-type: none;
+}
+
+.flexBoxContainer2 {
+
+  height: 10px;
+  display: flex;
+  Background: teal
+  justify-content: center;
   align-items: flex-start;
   list-style-type: none;
 }
