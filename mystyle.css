@@ -73,7 +73,6 @@ img {
 /*end of semantic elements*/
 
 .child {
-	font: sans-serif;
 	/*   font-size: 2em; */
 	padding: 10px;
 	text-align: center;
@@ -148,7 +147,8 @@ li a {
 
 li a:hover {
 	color: lightpink;
-	border-color: lightpink;
+	/* border-color: lightpink; */
 	background-color: teal;
 	transition: 1s;
+}
 	/* end of detailed designing*/
