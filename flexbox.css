@@ -8,7 +8,7 @@ img, source {
   display: flex;
   Background: lightpink
   justify-content: center;
-  align-items: flex-center;
+  align-items: flex center;
   list-style-type: none;
 }
 

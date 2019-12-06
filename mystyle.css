@@ -1,5 +1,19 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+
 /*baisic element needs*/
 
+
+body {
+	display: grid;
+	width: 100%;
+	grid-template-columns: 1fr;
+  text-align: center
+
+}
 h1 {
 	font-size: 2em;
 	color: lightpink;
@@ -22,8 +36,14 @@ footer {
 	display: block;
 	color: teal;
 	text-align: center;
-	padding: 14px 16px;
 	text-decoration: none;
+}
+
+p {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-right: 15px;
+  margin-left: 80px;
 }
 
 img {
@@ -35,6 +55,10 @@ img {
 	max-width: 25%;
 }
 
+.center {
+  text-align: center;
+  border: 3px;
+}
 
 /*end of basic element needs*/
 
@@ -74,7 +98,7 @@ img {
 
 .child {
 	/*   font-size: 2em; */
-	padding: 10px;
+	padding: 0px;
 	text-align: center;
 	background: rgba(255, 255, 255, 0.6);
 }
@@ -84,11 +108,8 @@ img {
 }
 
 .child:nth-child(even) {
-	background: teal;
+	background: white;
 }
-
-
-/*end of grid design*/
 
 
 /* Navigation design */
@@ -100,6 +121,7 @@ ul {
 	overflow: hidden;
 	background-color: white;
 	border: 5px solid lightpink;
+	width: 100%;
 }
 
 li {
@@ -152,3 +174,40 @@ li a:hover {
 	transition: 1s;
 }
 	/* end of detailed designing*/
+
+	/* For mobile phones: */
+	/* [class*="col-"] {
+	  width: 100%;
+	} */
+
+	@media only screen and (min-width: 500px) {
+	  /* For tablets: */
+body{
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-areas:
+	"nav"
+	"header"
+	"main"
+	"aside"
+	"footer";
+
+}
+	}
+
+	@media only screen and (min-width: 4000px) {
+	  /* For desktop: */
+		body{
+			display: grid;
+			width: 90%;
+			margin: auto;
+			grid-template-columns: 1fr 2fr 1fr;
+			grid-template-areas:
+			"header header header"
+			"main main main"
+			"aside aside aside"
+			"footer footer footer"
+
+		}
+	}
+	/*end of grid design*/
