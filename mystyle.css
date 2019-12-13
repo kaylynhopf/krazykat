@@ -61,7 +61,22 @@ img {
 }
 
 /*end of basic element needs*/
+/* start of flexbox */
+img, source {
+  width: 25%;
+	height: 25%
+}
 
+.flexBoxContainer {
+
+  height: 10px;
+  display: flex;
+  Background: lightpink;
+  justify-content: center;
+  align-items: flex center;
+  list-style-type: none;
+}
+/* end of flexbox */
 
 /* start of css grid designing*/
 
@@ -71,7 +86,10 @@ img {
 	display: grid;
 	grid-template-columns: 110px 1fr 110px;
 	grid-template-rows: 100px 1fr 100px;
-	grid-template-areas: "header header header" "main main main" ". Footer .";
+	grid-template-areas:
+	"header header header"
+	"main main main"
+	". Footer .";
 }
 
 
@@ -175,39 +193,18 @@ li a:hover {
 }
 	/* end of detailed designing*/
 
-	/* For mobile phones: */
-	/* [class*="col-"] {
-	  width: 100%;
-	} */
-
-	@media only screen and (min-width: 500px) {
-	  /* For tablets: */
-body{
-	display: grid;
-	grid-template-columns: 1fr;
-	grid-template-areas:
-	"nav"
-	"header"
-	"main"
-	"aside"
-	"footer";
-
-}
-	}
-
-	@media only screen and (min-width: 4000px) {
-	  /* For desktop: */
+	@media only screen and (max-width: 800px) {
 		body{
-			display: grid;
-			width: 90%;
-			margin: auto;
-			grid-template-columns: 1fr 2fr 1fr;
-			grid-template-areas:
-			"header header header"
-			"main main main"
-			"aside aside aside"
-			"footer footer footer"
-
+			background: white;
+		}
+header{
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-top: 10px;
+	padding-bottom:50px;
+}
+		p{
+			text-align: left;
 		}
 	}
 	/*end of grid design*/
