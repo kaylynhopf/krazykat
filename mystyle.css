@@ -4,18 +4,25 @@ h1 {
 	font-size: 2em;
 	color: lightpink;
 	background-color: teal;
+	text-align: center;
 }
 
 h2 {
 	font-size: 2em;
 	color: teal;
 	background-color: pink;
+	text-align: center;
 }
 
 h3 {
 	font-size: 1em;
 	color: lightpink;
 	background-color: teal;
+	text-align: center;
+}
+
+main {
+	padding: 10px;
 }
 
 footer {
@@ -75,7 +82,7 @@ img {
 .child {
 	font: sans-serif;
 	/*   font-size: 2em; */
-	padding: 10px;
+	padding: 0px;
 	text-align: center;
 	background: rgba(255, 255, 255, 0.6);
 }
@@ -85,7 +92,7 @@ img {
 }
 
 .child:nth-child(even) {
-	background: teal;
+	background: white;
 }
 
 
@@ -132,7 +139,16 @@ li a {
 
 
 /* end of screen reader only*/
+/* flexbox */
+.flexBoxContainer {
 
+  /* height: 10px; */
+  display: flex;
+  Background: lightpink
+  justify-content: center;
+  align-items: flex-center;
+  list-style-type: none;
+}
 
 /* detailed designing*/
 
@@ -151,4 +167,29 @@ li a:hover {
 	border-color: lightpink;
 	background-color: teal;
 	transition: 1s;
+}
+
+/* start of media querey */
+@media only screen and (max-width: 800px) {
+		body{
+			background: white;
+		}
+header{
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-top: 10px;
+	padding-bottom:50px;
+}
+		p{
+			text-align: center;
+		}
+
+		article {
+			text-align: left;
+		}
+		footer{
+			text-align: center;
+		}
+	}
+	/* end of media querey */
 	/* end of detailed designing*/
