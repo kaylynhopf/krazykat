@@ -74,7 +74,7 @@ img, source {
 	height: 25%
 }
 
-.flexBoxContainer {
+/* .flexBoxContainer {
 
   height: 10px;
   display: flex;
@@ -82,7 +82,7 @@ img, source {
   justify-content: center;
   align-items: flex center;
   list-style-type: none;
-}
+} */
 /* end of flexbox */
 
 /* start of css grid designing*/
@@ -181,8 +181,8 @@ li a {
 /* flexbox */
 .flexBoxContainer {
 
-  /* height: 10px; */
-  display: flex;
+  height: 10px;
+ 	display: flex;
   Background: lightpink
   justify-content: center;
   align-items: flex-center;
@@ -207,7 +207,6 @@ li a:hover {
 	background-color: teal;
 	transition: 1s;
 }
-<<<<<<< HEAD
 
 /* start of media querey */
 @media only screen and (max-width: 800px) {
@@ -232,22 +231,5 @@ header{
 		}
 	}
 	/* end of media querey */
-=======
->>>>>>> master
 	/* end of detailed designing*/
-
-	@media only screen and (max-width: 800px) {
-		body{
-			background: white;
-		}
-header{
-	padding-left: 10px;
-	padding-right: 10px;
-	padding-top: 10px;
-	padding-bottom:50px;
-}
-		p{
-			text-align: left;
-		}
-	}
 	/*end of grid design*/
