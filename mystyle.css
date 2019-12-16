@@ -68,22 +68,10 @@ img {
 }
 
 /*end of basic element needs*/
-/* start of flexbox */
 img, source {
   width: 25%;
 	height: 25%
 }
-
-/* .flexBoxContainer {
-
-  height: 10px;
-  display: flex;
-  Background: lightpink;
-  justify-content: center;
-  align-items: flex center;
-  list-style-type: none;
-} */
-/* end of flexbox */
 
 /* start of css grid designing*/
 
@@ -178,17 +166,6 @@ li a {
 
 
 /* end of screen reader only*/
-/* flexbox */
-.flexBoxContainer {
-
-  height: 10px;
- 	display: flex;
-  Background: lightpink
-  justify-content: center;
-  align-items: flex-center;
-  list-style-type: none;
-}
-
 /* detailed designing*/
 
 .shadow {
